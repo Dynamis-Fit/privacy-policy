@@ -7,3 +7,6 @@ https://dynamis-fit.github.io/privacy-policy/
 
 Support:
 https://dynamis-fit.github.io/privacy-policy/support.html
+
+Marketing Page:
+https://dynamis-fit.github.io/privacy-policy/home.html

@@ -8,44 +8,50 @@
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
             line-height: 1.6; 
-            color: #333; 
+            color: #f1f1f1; 
             max-width: 600px; 
             margin: 40px auto; 
             padding: 20px; 
             text-align: center; 
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb); /* sfondo gradiente blu */
         }
 
-        /* Box bianco per il logo */
-        .logo {
-            display: inline-block;
-            padding: 15px;
-            background: white;
-            border-radius: 20px; /* angoli stondati */
-            margin-bottom: 20px;
-        }
-
+        /* Logo con bordo sottile e ombra leggera */
         .logo img { 
             width: 80px; 
-            border-radius: 20px; /* angoli stondati dell’immagine */
+            border-radius: 20px; /* angoli stondati */
+            border: 3px solid white; /* bordo sottile bianco */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* ombra leggera per effetto “galleggiante” */
         }
 
-        h1 { color: #007AFF; }
-        p { font-size: 18px; margin-bottom: 30px; }
+        h1 { color: #ffffff; }
+        p { font-size: 18px; margin-bottom: 30px; color: #e0e0e0; }
 
         .btn { 
-            background-color: #007AFF; 
+            background-color: #3b82f6; 
             color: white; 
             padding: 15px 25px; 
             text-decoration: none; 
-            border-radius: 10px; 
+            border-radius: 12px; 
             font-weight: bold; 
             display: inline-block; 
+            transition: background 0.3s;
         }
 
-        .footer { margin-top: 50px; font-size: 14px; color: #888; }
+        .btn:hover {
+            background-color: #2563eb;
+        }
+
+        .footer { 
+            margin-top: 50px; 
+            font-size: 14px; 
+            color: #d1d1d1; 
+        }
     </style>
 </head>
 <body>
+
+    <!-- Logo con bordo e ombra -->
     <div class="logo">
         <img src="logo.png" alt="Dynamis Logo">
     </div>
@@ -62,5 +68,6 @@
         <p>Email: team.dynamis.app@gmail.com</p>
         <p>&copy; 2026 Dynamis App. All rights reserved.</p>
     </div>
+
 </body>
 </html>

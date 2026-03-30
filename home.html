@@ -5,45 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamis - Workout Tracker</title>
     <style>
+        /* Body e sfondo */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
             text-align: center;
-            color: #333;
+            color: #f1f1f1;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb); /* blu gradiente */
         }
+
+        /* Container principale */
         .container {
             padding: 40px 20px;
             max-width: 600px;
             margin: auto;
         }
-        img {
-            width: 100px;
+
+        /* Logo con box bianco */
+        .logo {
+            display: inline-block;
+            padding: 15px;
+            background: white;
             border-radius: 20px;
+            margin-bottom: 20px;
         }
+
+        .logo img {
+            width: 80px;
+        }
+
         h1 {
             margin-top: 20px;
+            color: #ffffff;
         }
+
         p {
             font-size: 18px;
+            color: #e0e0e0;
+            margin-bottom: 30px;
         }
+
+        /* Bottoni */
         .btn {
             display: inline-block;
             margin: 10px;
             padding: 15px 25px;
-            background: #007AFF;
+            background: #3b82f6; /* blu acceso */
             color: white;
             text-decoration: none;
             border-radius: 12px;
             font-weight: bold;
+            transition: background 0.3s;
         }
+
+        .btn:hover {
+            background: #2563eb;
+        }
+
+        /* Sezione caratteristiche */
         .features {
             text-align: left;
             margin-top: 30px;
+            color: #f1f1f1;
         }
+
+        .features ul {
+            padding-left: 20px;
+        }
+
+        .features li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
         .footer {
             margin-top: 50px;
             font-size: 14px;
-            color: #888;
+            color: #d1d1d1;
         }
     </style>
 </head>
@@ -51,13 +89,18 @@
 
 <div class="container">
 
-    <img src="logo.png" alt="Dynamis Logo">
+    <!-- Logo -->
+    <div class="logo">
+        <img src="logo.png" alt="Dynamis Logo">
+    </div>
 
     <h1>Dynamis</h1>
     <p>Track your workouts. Build real progress.</p>
 
+    <!-- Pulsante App Store -->
     <a href="#" class="btn">Download on App Store</a>
 
+    <!-- Caratteristiche principali -->
     <div class="features">
         <h2>Features</h2>
         <ul>
@@ -68,9 +111,11 @@
         </ul>
     </div>
 
+    <!-- Privacy e supporto -->
     <a href="/privacy-policy/" class="btn">Privacy Policy</a>
     <a href="/privacy-policy/support.html" class="btn">Support</a>
 
+    <!-- Footer -->
     <div class="footer">
         <p>&copy; 2026 Dynamis App</p>
     </div>

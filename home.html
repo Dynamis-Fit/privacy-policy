@@ -21,17 +21,13 @@
             margin: auto;
         }
 
-        /* Logo con box bianco */
-        .logo {
-            display: inline-block;
-            padding: 15px;
-            background: white;
-            border-radius: 20px;
-            margin-bottom: 20px;
-        }
-
+        /* Logo con bordo sottile e ombra */
         .logo img {
             width: 80px;
+            border-radius: 20px;       /* angoli stondati */
+            border: 3px solid white;   /* bordo sottile bianco */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* ombra leggera effetto “galleggiante” */
+            margin-bottom: 20px;
         }
 
         h1 {
@@ -41,8 +37,8 @@
 
         p {
             font-size: 18px;
-            color: #e0e0e0;
             margin-bottom: 30px;
+            color: #e0e0e0;
         }
 
         /* Bottoni */
@@ -89,7 +85,7 @@
 
 <div class="container">
 
-    <!-- Logo -->
+    <!-- Logo con bordo e ombra -->
     <div class="logo">
         <img src="logo.png" alt="Dynamis Logo">
     </div>
